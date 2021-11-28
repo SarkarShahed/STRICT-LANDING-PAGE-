@@ -1,0 +1,639 @@
+/*google fonts link*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/*google fonts here
+
+font-family: 'Fredoka One', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Bebas Neue', cursive;
+
+*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------------*/
+
+
+/*==================
+logo side start
+====================*/
+/*header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: 0.5s ease-in-out;
+	z-index: 100000;
+	padding: 20px 100px;
+}
+
+header .sticky{
+	padding: 5px 100px;
+	background: #fff;
+}*/
+
+
+.logo-side img{
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+/*====================
+ banner section start
+======================*/
+
+.banner-body{
+	background: url(../img/banner-bg.png) no-repeat center;
+	background-size: cover;
+	padding: 150px 0;
+}
+
+
+.text-animation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+}
+
+
+.text-animation h1{
+	position: relative;
+    font-size: 160px;
+    color: rgba(0,0,0,0.13);
+    -webkit-text-stroke: 0.1vw #eee;
+    text-transform: uppercase;
+    letter-spacing: 40px;
+	font-family: 'Bebas Neue', cursive;
+	margin-bottom: 0;
+}
+
+.text-animation h1::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	color: #fff;
+	-webkit-text-stroke: 0vw #383d52;
+	border-right: 5px solid #fff;
+	overflow: hidden;
+	animation: animate 4s linear infinite;
+}
+
+@keyframes animate
+
+{
+	0%,10%,100%{
+		width: 0;
+	}
+
+	70%{
+		width: 100%;
+	}
+
+	
+}
+
+
+
+.seperat{
+	width: 600px;
+	height: 3px;
+	background: #0096ff;
+	display: block;
+	margin: 0 auto;
+}
+
+.banner-pera p{
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 1px;
+
+}
+
+.btn-call{
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #0096ff;
+	outline: none;
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 3px;
+	border-radius: 0;
+	transition: 0.4s ease-in-out;
+}
+
+.btn-call::after{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background: #0096ff;
+	z-index: -1;
+	transition: 0.4s ease-in-out;
+}
+
+.btn-call::before{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	right: -100%;
+	bottom: 0;
+	background: #0096ff;
+	z-index: -1;
+	transition: 0.4s ease-in-out;
+}
+
+.btn-call:hover::after{
+	left: 0;
+	transition: 0.4s ease-in-out;
+}
+
+
+.btn-call:hover::before{
+	right: 0;
+	transition: 0.4s ease-in-out;
+}
+
+.btn-call:hover{
+	color: #fff;
+}
+
+
+.btn-call:focus{
+	outline: none;
+}
+
+
+/*========================
+socila media section start
+==========================*/
+
+.socil-body{
+	background: rgba(255,255,255,0.2);
+}
+
+.hover-iteam{
+	margin: 40px 0;
+}
+
+.hover-iteam a{
+	position: relative;
+	display: inline-block;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: #275b8f;
+	transition: 0.4s ease-in-out;
+	margin: 0 30px;
+	/*overflow: hidden;*/
+}
+
+.hover-iteam a::before, .hover-iteam a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	transition: 0.4s ease-in-out;
+}
+
+.hover-iteam a:hover{
+	transform: scale(.8);
+}
+
+.hover-iteam a:hover::before{
+	border-left: 4px solid;
+	border-right: 4px solid;
+	transform: skewX(20deg);
+}
+
+.hover-iteam a:hover::after{
+	border-top: 4px solid;
+	border-bottom: 4px solid;
+	transform: skewY(-20deg);
+}
+
+
+/*======================
+========================*/
+
+
+.simple-body{
+	background: #f9f9f9;
+	padding: 50px 0;
+}
+
+.simple-text h1{
+	font-size: 40px;
+	color: #2d3950;
+	letter-spacing: 3px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.simple-text p{
+	margin: 10px 140px;
+	line-height: 30px;
+	font-size: 19px;
+	color: #808080;
+	font-weight: 400;
+}
+
+
+
+/*==========================
+links section start
+============================*/
+
+.item-list a i{
+	font-size: 60px;
+	width: 80px;
+	height: 80px;
+	margin: 15px 0;
+	background: #5fc3ff;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	color: #fff;
+	line-height: 80px;
+}
+
+
+.item-list a i::after{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #48baff;
+	z-index: -1;		
+}
+
+
+
+.item-list h5{
+	color:  #2d3950;
+	margin: 15px 0;
+	font-weight: 600;
+}
+
+.item-list p{
+	text-align:center;
+	margin: 0 50px;
+	color: #808080;
+}
+
+
+
+/*=========================
+sutter heading start
+===========================*/
+
+.shutter-heaading-body{
+	padding: 50px 0;
+	background: #f6f9f9;
+}
+
+.shutter-heading h1{
+	font-size: 40px;
+	color: #2d3950;
+	letter-spacing: 3px;
+	font-family: 'Bebas Neue', cursive;
+	text-transform: capitalize;
+}
+
+.shutter-heading p{
+	margin: 10px 0;
+	line-height: 30px;
+	font-size: 19px;
+	color: #808080;
+	font-weight: 400;
+}
+
+
+/*======================
+shutter body start
+========================*/
+
+.shutter-body{
+	padding: 60px 0;
+	background: #f6f9f9;
+}
+
+.shutter-box{
+	width: 100%;
+	background: red;
+	box-shadow: 2px 2px 2px #eee;
+	position: relative;
+	margin: 15px auto;
+}
+
+.shutter-box .shutter-contant{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.shutter-box .shutter-contant::before,
+.shutter-box .shutter-contant::after{
+	content: "";
+	position: absolute;
+	width: 95%;
+	height: 47%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #219ff0;
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+
+.shutter-box .shutter-contant::before{
+	top: -20%;
+}
+
+.shutter-box .shutter-contant::after{
+	bottom: -20%;
+}
+
+.shutter-box:hover .shutter-contant::before{
+	top: 3%;
+	opacity: 0.8;
+}
+
+.shutter-box:hover .shutter-contant::after{
+	bottom: 3%;
+	opacity: 0.8;
+}
+
+.shutter-box .shutter-iteam{
+	width: 100%;
+	height: 45px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+	text-align: center;
+	transform: rotate(90deg);
+	opacity: 0;
+	transition: all 0.5s linear;
+}
+
+.shutter-box:hover .shutter-iteam{
+	opacity: 1;
+	transform: rotate(0deg);
+}
+
+.shutter-box ul{
+	padding: 0;
+	margin: 0 0 20px 0;
+	list-style: none;
+}
+
+.shutter-box ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.shutter-box ul li a{
+	color: #275b8f;
+	background: rgba(255,255,255,0.9);
+	display: block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+
+/*========================
+footer section start
+==========================*/
+
+footer{
+	background: url(../img/footer.png) no-repeat center;
+	background-size: cover;
+	padding: 80px 0;
+}
+
+
+.footer-heading h1{
+	font-size: 40px;
+	color: #fff;
+	letter-spacing: 3px;
+	font-family: 'Bebas Neue', cursive;
+	text-transform: capitalize;
+}
+
+.footer-heading p{
+	margin: 10px 0;
+	line-height: 30px;
+	font-size: 19px;
+	color: #808080;
+	font-weight: 400;
+}
+
+
+.footer-contant .frm-cntrl{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 25px;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px;
+	border: 2px solid #00ffdc;
+	border-radius: 2px;
+}
+
+textarea{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 25px;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 18px;
+	padding: 16px;
+	border: 2px solid #00ffdc;
+	border-radius: 2px;
+}
+
+label {
+    display: inline-block;
+    color: #fff;
+}
+
+.footer-send{
+	display: block;
+	text-align: right;
+}
+
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-send{
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	padding: 10px 40px;
+	font-size: 20px;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #0096ff;
+	outline: none;
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 3px;
+	border-radius: 0;
+	transition: 0.4s ease-in-out;
+}
+
+.btn-send::after{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background: #0096ff;
+	z-index: -1;
+	transition: 0.4s ease-in-out;
+}
+
+.btn-send::before{
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	right: -100%;
+	bottom: 0;
+	background: #0096ff;
+	z-index: -1;
+	transition: 0.4s ease-in-out;
+}
+
+.btn-send:hover::after{
+	left: 0;
+	transition: 0.4s ease-in-out;
+}
+
+
+.btn-send:hover::before{
+	right: 0;
+	transition: 0.4s ease-in-out;
+}
+
+.btn-send:hover{
+	color: #fff;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem;
+    padding-top: 10px;
+}
+
+
+
+/*==========================================================
+		media query section work 
+============================================================*/
+
+/*--nootbook media query*/
+@media (min-width: 768px) and (max-width: 990px){
+
+}
+
+
+/*---tablet device media query--*/
+@media (min-width: 575px) and (max-width: 768px){
+
+}
+
+/*---mobile device media query--*/
+@media (min-width: 320px) and (max-width: 575px){
+	.banner-body {
+	    padding: 50px 0;
+	}
+	.text-animation h1 {
+	    position: relative;
+	    font-size: 50px;
+	    color: rgba(0,0,0,0.13);
+	    -webkit-text-stroke: 0.1vw #eee;
+	    text-transform: uppercase;
+	}
+	.banner-pera p {
+	    font-size: 20px;
+	    line-height: 30px;
+	    font-weight: 600;
+	}
+	.simple-text p {
+	    margin: 0;
+	    line-height: 30px;
+	    font-size: 20px;
+	    color: #808080;
+	    font-weight: 400;
+	}
+	.item-list{
+		margin: 10px;
+	}
+	footer {
+	 padding: 0;
+	}
+	.btn-send {
+	    display: block;
+	    margin: 20px auto;
+	}
+}
